@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Kalorien Rechner</title>
+  </head>
+  <body>
+    <div class="flex">
+      <div class="container">
+        <h1>Kalorien rechner</h1>
+        <form action="">
+          <label for="körpergröß">Körpergröß</label>
+          <input type="number" value="" id="height" />
+          <label for="alter">Alter</label>
+          <input type="number" value="" id="age" />
+          <label for="gewicht">Gewicht</label>
+          <input type="number" value="" id="gewicht" />
+          <div class="radio">
+            <h2>körperbau</h2>
+            <label for="weiblich">Weiblich</label>
+            <input type="radio" name="körperbau" id="woman" />
+            <label for="männlich">Männlich</label>
+            <input type="radio" name="körperbau" id="man" />
+          </div>
+          <h2>Arbeits- und Freizeitaktivität</h2>
+          <select name="select" id="select">
+            <option value="0.95">Schlafen</option>
+            <option value="1.2">Nur Sitzen oder Liegen</option>
+            <option value="1.5"
+              >Ausschließlich sitzende Tätigkeit mit wenig oder keiner
+              körperlichen Aktivität in der Freizeit</option
+            >
+            <option value="1.7"
+              >Sitzende Tätigkeit mit zeitweilig gehender
+              oderstehenderTätigkeit</option
+            >
+            <option value="1.9"
+              >Überwiegend gehende oder stehende Tätigkeit</option
+            >
+            <option value="2.2"
+              >Körperlich anstrengende berufliche Arbeit</option
+            >
+          </select>
+          <input type="button" value="Submit" id="equal" />
+          <table class="result">
+            <tr>
+              <td></td>
+              <td>Kcal</td>
+              <td>KJ</td>
+            </tr>
+            <tr>
+              <td>Grundumsatz</td>
+              <td id="grundumsatz"></td>
+              <td id="kjfirst"></td>
+            </tr>
+            <tr>
+              <td>Gesamtumsatz</td>
+              <td id="gesamtumsatz"></td>
+              <td id="kjscound"></td>
+            </tr>
+          </table>
+        </form>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
